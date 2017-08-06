@@ -31,4 +31,11 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/project', (req, res) => {
+  res.render('project.hbs', {
+    pageTitle: 'Project Page',
+    projectDescription: 'Node app'
+  });
+});
+
 app.listen(port);
